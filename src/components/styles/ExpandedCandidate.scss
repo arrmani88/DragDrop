@@ -1,0 +1,108 @@
+.container {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  height: 40vw;
+  width: 70vw;
+  overflow: hidden;
+}
+
+.expandedImage {
+  height: 100%;
+  width: auto;
+}
+
+.blueBox {
+  height: 40vw;
+  width: 100%;
+  background-color: rgb(29 78 216);
+  padding: 15px 25px 15px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// ------------------------------
+
+.horizontal-slider {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.example-thumb {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  background: #ffffff;
+  border: 5px solid #3774ff;
+  border-radius: 100%;
+  display: block;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+
+.example-thumb.active {
+  background-color: grey;
+}
+
+.example-track {
+  position: relative;
+  background: #ddd;
+}
+
+.example-track.example-track-0 {
+  background: #83a9ff;
+}
+
+.horizontal-slider .example-track {
+  top: 25px;
+  height: 4px;
+}
+
+.horizontal-slider .example-thumb {
+  top: 12px;
+  width: 10px;
+  outline: none;
+  height: 10px;
+  line-height: 38px;
+}
+
+.map-marker {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50% 50% 0 50%;
+  transform: rotate(225deg);
+  margin-left: 5px;
+  margin-top: 35px;
+  overflow: hidden;
+}
+
+.mark {
+  background: #d9dbe9;
+  height: 8px;
+  width: 2px;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  top: 17px;
+
+  &::before {
+    content: attr(aria-content);
+    position: absolute;
+    font-style: normal;
+    font-size: 17px;
+    color: white;
+    bottom: 15px;
+    left: 50%;
+    bottom: 10px;
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+}
+
+input {
+  height: 20px;
+  width: 20px;
+  accent-color: white;
+}

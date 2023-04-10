@@ -1,0 +1,26 @@
+.dragDrop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw;
+    padding-top: 100px;
+}
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+}
+.topDescription {
+    font-size: 30px;
+    padding: 40px;
+}
+
+@media only screen and (max-width: 490px) {
+    .buttonsContainer {
+        flex-direction: column;
+    }
+    .topDescription {
+        font-size: 20px;
+        width: 90vw;
+        padding: 0px;
+    }
+}
